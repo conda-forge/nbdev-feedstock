@@ -57,7 +57,7 @@ requirements:
     - python >=3.7
     - pyyaml
     - watchdog
-    - ghapi
+    - ghapi >=1.0.3
 
 test:
   imports:
