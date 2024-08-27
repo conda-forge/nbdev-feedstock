@@ -1,5 +1,5 @@
 {% set name = "nbdev" %}
-{% set version = "2.3.27" %}
+{% set version = "2.3.28" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nbdev-{{ version }}.tar.gz
-  sha256: bc5efd998e5dcb4d317da191f0bf473e97713a2129889d4042de3684ef4320cb
+  sha256: 053645717eff98f0e06a12bd2b65a25505162b994586d1f87f8222960208c20c
 
 build:
   noarch: python
@@ -49,6 +49,7 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools
   run:
     - asttokens
     - astunparse
