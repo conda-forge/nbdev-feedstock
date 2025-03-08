@@ -53,7 +53,7 @@ requirements:
   run:
     - asttokens
     - astunparse
-    - execnb >=0.1.4
+    - execnb >=0.1.12
     - fastcore >=1.5.27
     - python >={{ python_min }}
     - pyyaml
