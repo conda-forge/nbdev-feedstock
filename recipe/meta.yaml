@@ -1,5 +1,5 @@
 {% set name = "nbdev" %}
-{% set version = "2.3.34" %}
+{% set version = "2.3.35" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nbdev-{{ version }}.tar.gz
-  sha256: a0766337e42ee08f47c91d517804e009d85e4dfbe984951cbecee877538e4ef7
+  sha256: 3fd2cdd38543e022892e74f1a404fd74aeacaea1a49f683578af097493c4c8f7
 
 build:
   noarch: python
@@ -53,7 +53,7 @@ requirements:
   run:
     - asttokens
     - astunparse
-    - execnb >=0.1.4
+    - execnb >=0.1.12
     - fastcore >=1.5.27
     - python >={{ python_min }}
     - pyyaml
