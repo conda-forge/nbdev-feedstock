@@ -1,5 +1,5 @@
 {% set name = "nbdev" %}
-{% set version = "2.3.35" %}
+{% set version = "2.3.36" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nbdev-{{ version }}.tar.gz
-  sha256: 3fd2cdd38543e022892e74f1a404fd74aeacaea1a49f683578af097493c4c8f7
+  sha256: 478d7260004f13b0a819f00aa87732695d39a19aa21c81fceab9779e2988a40b
 
 build:
   noarch: python
@@ -59,6 +59,7 @@ requirements:
     - pyyaml
     - watchdog
     - ghapi >=1.0.3
+    - plum-dispatch
 
 test:
   imports:
