@@ -59,6 +59,7 @@ requirements:
     - pyyaml
     - watchdog
     - ghapi >=1.0.3
+    - plum-dispatch
 
 test:
   imports:
