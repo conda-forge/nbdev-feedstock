@@ -1,5 +1,5 @@
 {% set name = "nbdev" %}
-{% set version = "2.4.2" %}
+{% set version = "2.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nbdev-{{ version }}.tar.gz
-  sha256: 3ad0a9376270e2086fd7d8d8e0dd989f8e82c7166e3d04b26c5c3ad8c2087f48
+  sha256: 0e2a56974b33fa20b409ae5d2c7165e7f820cab176ce6a98d33561e280e4a892
 
 build:
   noarch: python
