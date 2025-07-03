@@ -1,5 +1,5 @@
 {% set name = "nbdev" %}
-{% set version = "2.4.2" %}
+{% set version = "2.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nbdev-{{ version }}.tar.gz
-  sha256: 3ad0a9376270e2086fd7d8d8e0dd989f8e82c7166e3d04b26c5c3ad8c2087f48
+  sha256: a78056dd793ec28ba1c999343a6990ded47def9b2ce7010d10be720b2b353ac5
 
 build:
   noarch: python
@@ -51,15 +51,17 @@ requirements:
     - python {{ python_min }}
     - setuptools >=64.0
   run:
-    - asttokens
-    - astunparse
-    - execnb >=0.1.12
-    - fastcore >=1.8.0
     - python >={{ python_min }}
-    - pyyaml
-    - watchdog
+    - fastcore >=1.8.0
+    - execnb >=0.1.12
+    - astunparse
     - ghapi >=1.0.3
-    - plum-dispatch
+    - watchdog    
+    - asttokens
+    - setuptools
+    - python-build
+    - packaging
+    - pyyaml
 
 test:
   imports:
