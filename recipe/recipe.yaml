@@ -56,7 +56,7 @@ requirements:
     - setuptools >=64.0
   run:
     - python >=${{ python_min }}
-    - fastcore >=1.12.3
+    - fastcore >=1.12.35
     - execnb >=0.1.12
     - astunparse
     - ghapi >=1.0.3
@@ -71,7 +71,9 @@ tests:
       imports:
         - nbdev
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*
