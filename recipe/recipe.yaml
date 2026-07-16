@@ -56,7 +56,7 @@ requirements:
     - setuptools >=64
   run:
     - python >=${{ python_min }}
-    - fastcore >=1.14.1
+    - fastcore >=1.14.6
     - execnb >=0.2.4
     - astunparse
     - ghapi >=2.0.0
