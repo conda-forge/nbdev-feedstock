@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: nbdev
-  version: "3.2.1"
+  version: "3.2.2"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/nbdev-${{ version }}.tar.gz
-  sha256: 963012bb6166af625b46839271596eede3975fd69cba3d17637b7eb81fb794ad
+  sha256: 55d853000e433c6841c1d05fea663c3c22e5e2466d2ef540e598c32a19e1e61d
 
 build:
   number: 0
@@ -65,7 +65,7 @@ requirements:
     - asttokens
     - setuptools
     - python-build
-    - fastgit
+    - fastgit >=0.0.7
     - pyyaml
     - tomli
 
