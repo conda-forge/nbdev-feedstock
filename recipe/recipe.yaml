@@ -58,7 +58,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - fastcore >=2.2.7
-    - execnb >=0.2.11
+    - execnb >=0.3.2
     - astunparse
     - ghapi >=2.0.2
     - watchdog
