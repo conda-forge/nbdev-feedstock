@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: nbdev
-  version: "3.3.12"
+  version: "3.3.15"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/nbdev-${{ version }}.tar.gz
-  sha256: 0f98def38f2a6faa18cbad0bc191806c9026b7518c8814a75d8b0f3eab967da1
+  sha256: dedb063314cc83360238ca10af48b5daca52f3e2b01d86ad3c97bea364ed19b9
 
 build:
   number: 0
