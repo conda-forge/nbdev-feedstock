@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: nbdev
   version: "3.3.15"
-  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -58,7 +57,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - fastcore >=2.2.7
-    - execnb >=0.3.2
+    - execnb >=0.3.3
     - astunparse
     - ghapi >=2.0.2
     - watchdog
