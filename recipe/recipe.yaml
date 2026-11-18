@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: nbdev
-  version: "3.3.29"
+  version: "3.3.30"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/nbdev-${{ version }}.tar.gz
-  sha256: ed4e59ab7eb0ab4b7c7b93f7132fd739b7496ac588384d18527b255cb8883349
+  sha256: da2da8478e690e7ecd05b94bf8628ce7bdaf43ef0c5b37ac1218a77a876a0c2d
 
 build:
   number: 0
@@ -56,7 +56,7 @@ requirements:
     - setuptools >=77
   run:
     - python >=${{ python_min }}
-    - fastcore >=2.2.39
+    - fastcore >=2.2.45
     - execnb >=0.3.3
     - astunparse
     - ghapi >=2.0.2
